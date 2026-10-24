@@ -1,0 +1,25 @@
+#BlueJ class context
+#Tue Oct 20 21:21:36 COT 2026
+comment0.target=Wheel
+comment0.text=\r\n representa una rueda y controla el simbolo seleccionado\r\n\r\n @author gaby-mathias\r\n @version 2026-2\r\n
+comment1.params=colors
+comment1.target=Wheel(java.util.ArrayList)
+comment1.text=\r\n crea una rueda con una copia de los colores de la maquina\r\n\r\n @param colors colores iniciales de la rueda\r\n
+comment2.params=pos color
+comment2.target=void addSymbol(int, java.lang.String)
+comment2.text=\r\n agrega un simbolo a la rueda y conserva la seleccion\r\n\r\n @param pos posicion en la que se agrega\r\n @param color color del simbolo\r\n
+comment3.params=color
+comment3.target=void delSymbol(java.lang.String)
+comment3.text=\r\n elimina un simbolo y ajusta la posicion seleccionada\r\n\r\n @param color color del simbolo que se elimina\r\n
+comment4.target=boolean spin()
+comment4.text=\r\n avanza al siguiente simbolo y vuelve al primero al terminar\r\n\r\n @return true si la rueda tiene simbolos para girar\r\n
+comment5.params=color
+comment5.target=boolean placeSymbol(java.lang.String)
+comment5.text=\r\n selecciona un simbolo por su color\r\n\r\n @param color color que se desea seleccionar\r\n @return true si el simbolo existe\r\n
+comment6.target=java.lang.String selectedSymbol()
+comment6.text=\r\n consulta el color seleccionado\r\n\r\n @return color seleccionado o null si la rueda esta vacia\r\n
+comment7.target=int size()
+comment7.text=\r\n consulta cuantos simbolos contiene la rueda\r\n\r\n @return cantidad de simbolos\r\n
+comment8.target=java.lang.String[] symbols()
+comment8.text=\r\n consulta los simbolos de la rueda\r\n\r\n @return colores en el orden de la rueda\r\n
+numComments=9
