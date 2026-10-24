@@ -1,0 +1,12 @@
+#BlueJ class context
+#Mon Oct 19 14:23:43 COT 2026
+comment0.target=GrowingSymbol
+comment0.text=\r\n Representa un simbolo que crece con cada giro.\r\n Es el tipo adicional propuesto para el ciclo cuatro.\r\n
+comment1.params=color
+comment1.target=GrowingSymbol(java.lang.String)
+comment1.text=\r\n Crea un simbolo de tama\u00F1o diez.\r\n\r\n @param color color del simbolo\r\n
+comment2.target=void onSpin()
+comment2.text=Aumenta cinco unidades sin superar cuarenta.
+comment3.target=Symbol createCopy()
+comment3.text=Crea una instancia inicial para otra rueda.
+numComments=4

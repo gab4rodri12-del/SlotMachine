@@ -1,0 +1,14 @@
+#BlueJ class context
+#Sat Oct 24 02:11:53 COT 2026
+comment0.target=SlotMachineContest
+comment0.text=\r\n Resuelve y simula el problema de la maraton\r\n usando SlotMachine como herramienta.\r\n\r\n @author rodriguezr-vargasc\r\n @version 1.2\r\n
+comment1.params=n
+comment1.target=int[][] solve(int)
+comment1.text=\r\n Busca una secuencia de acciones que lleva\r\n la maquina al jackpot.\r\n\r\n @param n cantidad de ruedas y simbolos\r\n @return acciones con rueda y pasos; matriz vacia\r\n         si n es invalido o no se consigue una solucion\r\n
+comment2.params=n
+comment2.target=void simulate(int)
+comment2.text=\r\n Muestra la solucion de una nueva maquina\r\n y oculta la simulacion anterior.\r\n\r\n @param n cantidad de ruedas y simbolos\r\n
+comment3.params=machine n
+comment3.target=int[][] solveMachine(SlotMachine, int)
+comment3.text=\r\n Ejecuta la estrategia de solucion\r\n sobre una maquina.\r\n
+numComments=4

@@ -1,0 +1,37 @@
+#BlueJ class context
+#Mon Oct 19 15:27:43 COT 2026
+comment0.target=SlotMachineC4Test
+comment0.text=\r\n Pruebas del ciclo cuatro.\r\n\r\n @author rodriguezr-vargasc\r\n
+comment1.target=SlotMachine createMachine()
+comment1.text=Crea una maquina con dos colores registrados.
+comment10.target=void shouldKeepLockedLefty()
+comment11.target=void shouldRejectLockingRebel()
+comment12.target=void shouldRejectDeletingRebel()
+comment13.target=void shouldRejectSwappingRebel()
+comment14.target=void shouldAllowRebelToSpin()
+comment15.target=void shouldPreserveFailureDuringGeneralSpin()
+comment16.target=void shouldRegisterSpecialSymbols()
+comment17.target=void shouldRejectUnknownSymbolType()
+comment18.target=void shouldRejectRepeatedColor()
+comment19.target=void shouldRejectInvalidColor()
+comment2.target=void shouldCreateNormalWheel()
+comment20.target=void shouldAcceptOrange()
+comment21.target=void shouldRejectInvalidConfigurationWithoutChanges()
+comment22.target=void shouldRejectDeletingUsedSymbol()
+comment23.target=void shouldDeleteUnusedSymbol()
+comment24.target=void shouldKeepNormalSymbolSize()
+comment25.target=void shouldShrinkEphemeralSymbol()
+comment26.target=void shouldKeepEphemeralMinimumSize()
+comment27.target=void shouldAlternateShyVisibility()
+comment28.target=void shouldNotToggleShyFromSpinAlone()
+comment29.target=void shouldGrowGrowingSymbol()
+comment3.target=void shouldRejectUnknownWheelType()
+comment30.target=void shouldKeepGrowingMaximumSize()
+comment31.target=void shouldCreateIndependentSymbolCopies()
+comment4.target=void shouldSpinNormalWheel()
+comment5.target=void shouldKeepSymbolWithZeroSteps()
+comment6.target=void shouldSpinWithNegativeSteps()
+comment7.target=void shouldCopyLeftSymbol()
+comment8.target=void shouldSpinLeftyWithoutLeftNeighbor()
+comment9.target=void shouldCopyThroughLeftyChain()
+numComments=32

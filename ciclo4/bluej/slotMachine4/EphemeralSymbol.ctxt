@@ -1,0 +1,12 @@
+#BlueJ class context
+#Mon Oct 19 14:24:36 COT 2026
+comment0.target=EphemeralSymbol
+comment0.text=\r\n Representa un simbolo que disminuye de tama\u00F1o al girar.\r\n
+comment1.params=color
+comment1.target=EphemeralSymbol(java.lang.String)
+comment1.text=\r\n Crea un simbolo efimero.\r\n\r\n @param color color del simbolo\r\n
+comment2.target=void onSpin()
+comment2.text=Reduce cinco unidades sin bajar de uno.
+comment3.target=Symbol createCopy()
+comment3.text=Crea una instancia inicial para otra rueda.
+numComments=4

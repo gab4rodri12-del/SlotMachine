@@ -1,0 +1,15 @@
+#BlueJ class context
+#Mon Oct 19 15:27:43 COT 2026
+comment0.target=RebelWheel
+comment0.text=\r\n Representa una rueda que no permite bloquearla,\r\n intercambiarla ni eliminarla.\r\n
+comment1.target=RebelWheel()
+comment1.text=Crea una rueda rebelde con cuerpo rojo.
+comment2.target=boolean canLock()
+comment2.text=\r\n Indica que la rueda no permite el bloqueo.\r\n\r\n @return false\r\n
+comment3.target=boolean canSwap()
+comment3.text=\r\n Indica que la rueda no permite el intercambio.\r\n\r\n @return false\r\n
+comment4.target=boolean canDelete()
+comment4.text=\r\n Indica que la rueda no permite la eliminacion.\r\n\r\n @return false\r\n
+comment5.target=void lock()
+comment5.text=Conserva la rueda desbloqueada.
+numComments=6

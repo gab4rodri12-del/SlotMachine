@@ -1,0 +1,27 @@
+#BlueJ class context
+#Mon Oct 19 15:27:43 COT 2026
+comment0.target=SlotMachineCC4Test
+comment0.text=\r\n Casos propuestos para compartir en el ciclo cuatro.\r\n\r\n @author rodriguezr-vargasc\r\n
+comment1.target=SlotMachine createMachine()
+comment1.text=Crea una maquina vacia con dos colores registrados.
+comment10.target=void accordingRodriguezRVargasCShouldPreserveGeneralSpinFailure()
+comment11.target=void accordingRodriguezRVargasCShouldKeepLeftyWithZeroSteps()
+comment12.target=void accordingRodriguezRVargasCShouldRejectInvalidConfigurations()
+comment13.target=void accordingRodriguezRVargasCShouldRejectChangingLockedConfiguration()
+comment14.target=void accordingRodriguezRVargasCShouldRegisterEverySymbolType()
+comment15.target=void accordingRodriguezRVargasCShouldRejectInvalidSymbolRegistrations()
+comment16.target=void accordingRodriguezRVargasCShouldProtectUsedSymbols()
+comment17.target=void accordingRodriguezRVargasCShouldKeepNormalSymbolUnchanged()
+comment18.target=void accordingRodriguezRVargasCShouldShrinkWithoutDisappearing()
+comment19.target=void accordingRodriguezRVargasCShouldLimitGrowingSize()
+comment2.target=void accordingRodriguezRVargasCShouldRejectRebelLock()
+comment20.target=void accordingRodriguezRVargasCShouldToggleShyOnlyOnSelection()
+comment21.target=void accordingRodriguezRVargasCShouldKeepCopiesIndependent()
+comment3.target=void accordingRodriguezRVargasCShouldRejectRebelDeletion()
+comment4.target=void accordingRodriguezRVargasCShouldRejectRebelSwapBothWays()
+comment5.target=void accordingRodriguezRVargasCShouldCopyLeftOnRandomSpin()
+comment6.target=void accordingRodriguezRVargasCShouldCopyLeftOnNegativeSpin()
+comment7.target=void accordingRodriguezRVargasCShouldCopyLeftyChain()
+comment8.target=void accordingRodriguezRVargasCShouldSpinLeftyWithoutNeighbor()
+comment9.target=void accordingRodriguezRVargasCShouldKeepLockedLeftyInConfiguration()
+numComments=22

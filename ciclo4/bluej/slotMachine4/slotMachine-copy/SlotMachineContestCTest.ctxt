@@ -1,0 +1,19 @@
+#BlueJ class context
+#Mon Oct 19 15:27:43 COT 2026
+comment0.target=SlotMachineContestCTest
+comment0.text=\r\n Pruebas del ciclo 3 en modo invisible.\r\n @author rodriguezr-vargasc\r\n
+comment1.target=void accordingRodriguezRVargasCShouldKeepJackpot()
+comment2.target=void accordingRodriguezRVargasCShouldSolveOneDifferent()
+comment3.target=void accordingRodriguezRVargasCShouldSolveReverseOrder()
+comment4.target=void accordingRodriguezRVargasCShouldSolveAlternatingSymbols()
+comment5.target=void accordingRodriguezRVargasCShouldReuseContest()
+comment6.params=contest initial
+comment6.target=void checkSolution(SlotMachineContest, int[])
+comment6.text=Resuelve y reproduce la secuencia desde la misma configuracion.
+comment7.params=solution n
+comment7.target=void checkActions(int[][], int)
+comment7.text=Comprueba formato, indices, pasos y limite de acciones.
+comment8.params=machine solution
+comment8.target=void replay(SlotMachine, int[][])
+comment8.text=Reproduce las acciones y rechaza movimientos posteriores al jackpot.
+numComments=9

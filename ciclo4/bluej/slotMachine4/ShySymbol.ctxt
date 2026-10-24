@@ -1,0 +1,14 @@
+#BlueJ class context
+#Mon Oct 19 14:24:36 COT 2026
+comment0.target=ShySymbol
+comment0.text=\r\n Representa un simbolo que alterna su visibilidad\r\n cada vez que es seleccionado.\r\n
+comment1.params=color
+comment1.target=ShySymbol(java.lang.String)
+comment1.text=\r\n Crea un simbolo inicialmente visible.\r\n\r\n @param color color del simbolo\r\n
+comment2.target=void onSelect()
+comment2.text=Alterna la visibilidad.
+comment3.target=boolean isVisible()
+comment3.text=Retorna la visibilidad propia del simbolo.
+comment4.target=Symbol createCopy()
+comment4.text=Crea una instancia inicial para otra rueda.
+numComments=5

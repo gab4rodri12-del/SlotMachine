@@ -1,0 +1,10 @@
+#BlueJ class context
+#Mon Oct 19 15:27:43 COT 2026
+comment0.target=LeftyWheel
+comment0.text=\r\n Representa una rueda que al girar copia\r\n el simbolo de su vecina izquierda.\r\n
+comment1.target=LeftyWheel()
+comment1.text=Crea una rueda izquierda con cuerpo azul.
+comment2.params=proposedSymbol leftWheel
+comment2.target=java.lang.String selectSpinSymbol(java.lang.String, Wheel)
+comment2.text=\r\n Selecciona el simbolo de la vecina izquierda.\r\n Si no existe vecina, acepta el simbolo propuesto.\r\n\r\n @param proposedSymbol simbolo propuesto por la maquina\r\n @param leftWheel rueda izquierda, o null si no existe\r\n @return simbolo seleccionado\r\n
+numComments=3

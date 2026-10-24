@@ -1,0 +1,33 @@
+#BlueJ class context
+#Mon Oct 19 15:27:28 COT 2026
+comment0.target=Canvas
+comment0.text=\r\n Lienzo utilizado por las figuras.\r\n Basado en Canvas de BlueJ, de Bruce Quig y Michael Kolling.\r\n
+comment1.target=Canvas getCanvas()
+comment1.text=Obtiene y muestra el lienzo compartido.
+comment10.target=void redraw()
+comment10.text=Redibuja todas las figuras registradas.
+comment2.params=title width height background
+comment2.target=Canvas(java.lang.String, int, int, java.awt.Color)
+comment2.text=Crea el lienzo y su imagen de dibujo.
+comment3.params=visible
+comment3.target=void setVisible(boolean)
+comment3.text=Cambia la visibilidad de la ventana.
+comment4.params=object color shape
+comment4.target=void draw(java.lang.Object, java.lang.String, java.awt.Shape)
+comment4.text=Agrega o actualiza una figura.
+comment5.params=object
+comment5.target=void erase(java.lang.Object)
+comment5.text=Elimina una figura del lienzo.
+comment6.params=name
+comment6.target=boolean isValidColor(java.lang.String)
+comment6.text=Indica si un nombre representa un color admitido.
+comment7.params=name
+comment7.target=java.awt.Color resolveColor(java.lang.String)
+comment7.text=\r\n Obtiene el color.\r\n Retorna null cuando el nombre no es valido.\r\n
+comment8.params=name
+comment8.target=void setForegroundColor(java.lang.String)
+comment8.text=Establece el color de dibujo.
+comment9.params=milliseconds
+comment9.target=void wait(int)
+comment9.text=Espera la cantidad indicada de milisegundos.
+numComments=11

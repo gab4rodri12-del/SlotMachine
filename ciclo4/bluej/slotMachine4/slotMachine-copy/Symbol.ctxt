@@ -1,0 +1,23 @@
+#BlueJ class context
+#Mon Oct 19 14:23:43 COT 2026
+comment0.target=Symbol
+comment0.text=\r\n Representa un simbolo normal.\r\n
+comment1.params=color
+comment1.target=Symbol(java.lang.String)
+comment1.text=\r\n Crea un simbolo de tama\u00F1o treinta.\r\n\r\n @param color color del simbolo\r\n
+comment2.target=java.lang.String getColor()
+comment2.text=Retorna el color del simbolo.
+comment3.target=int getSize()
+comment3.text=Retorna el tama\u00F1o del simbolo.
+comment4.params=newSize
+comment4.target=void setSize(int)
+comment4.text=Cambia el tama\u00F1o conservando un minimo de uno.
+comment5.target=void onSpin()
+comment5.text=El simbolo normal no cambia al girar.
+comment6.target=void onSelect()
+comment6.text=El simbolo normal no cambia al seleccionarlo.
+comment7.target=boolean isVisible()
+comment7.text=El simbolo normal permite ser mostrado.
+comment8.target=Symbol createCopy()
+comment8.text=\r\n Crea una instancia inicial independiente para otra rueda.\r\n\r\n @return nuevo simbolo del mismo tipo y color\r\n
+numComments=9
