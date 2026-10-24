@@ -1,0 +1,21 @@
+#BlueJ class context
+#Sat Oct 24 01:07:00 COT 2026
+comment0.target=SlotMachineC2Test
+comment0.text=\r\n pruebas unitarias del ciclo 2\r\n todas las pruebas se hacen en modo invisible\r\n
+comment1.target=SlotMachine crearMaquina()
+comment1.text=\r\n crea una maquina con dos ruedas\r\n y dos simbolos diferentes\r\n
+comment2.target=void shouldSwapWheels()
+comment2.text=\r\n verifica que dos ruedas se intercambian\r\n
+comment3.target=void shouldNotSpinLockedWheel()
+comment3.text=\r\n verifica que una rueda bloqueada no gira\r\n
+comment4.target=void shouldSpinUnlockedWheel()
+comment4.text=\r\n verifica que una rueda puede girar\r\n despues de desbloquearla\r\n
+comment5.target=void shouldSpinMultipleSteps()
+comment5.text=\r\n verifica que una rueda gira varios pasos\r\n
+comment6.target=void shouldSetConfiguration()
+comment6.text=\r\n verifica que se puede establecer\r\n una configuracion determinada\r\n
+comment7.target=void shouldRejectInvalidConfiguration()
+comment7.text=\r\n verifica que una configuracion invalida\r\n no modifica la maquina\r\n
+comment8.target=void shouldNotSwapLockedWheel()
+comment8.text=\r\n verifica que no se intercambia\r\n una rueda bloqueada\r\n
+numComments=9

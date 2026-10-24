@@ -1,0 +1,9 @@
+#BlueJ class context
+#Sat Oct 24 01:07:25 COT 2026
+comment0.target=SlotMachineCC2Test
+comment0.text=\r\n pruebas compartidas del ciclo 2\r\n
+comment1.target=void shouldNotSwapWhenLocked()
+comment1.text=\r\n comprueba que una rueda bloqueada\r\n no puede intercambiarse\r\n
+comment2.target=void shouldSpinAfterUnlock()
+comment2.text=\r\n comprueba que una rueda puede girar\r\n despues de desbloquearse\r\n
+numComments=3

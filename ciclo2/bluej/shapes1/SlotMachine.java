@@ -130,6 +130,10 @@ public class SlotMachine {
             return;
         }
         wheel = adjust(wheel, wheels.size());
+        if (wheels.get(wheel - 1).isLocked()) {
+            error("La rueda esta bloqueada");
+            return;
+        }
         if (!wheels.get(wheel - 1).spin()) {
             error("La rueda no tiene simbolos");
             return;
@@ -147,9 +151,149 @@ public class SlotMachine {
             error("No hay ruedas o simbolos para girar");
             return;
         }
-        for (Wheel wheel : wheels) wheel.spin();
+        boolean moved = false;
+        for (Wheel wheel : wheels) {
+            if (!wheel.isLocked()) moved = wheel.spin() || moved;
+        }
+        if (!moved) {
+            error("No hay ruedas desbloqueadas para girar");
+            return;
+        }
         lastOperation = true;
         updateView();
+    }
+
+    /**
+     * intercambia dos ruedas si ambas estan desbloqueadas
+     *
+     * @param first posicion de la primera rueda
+     * @param second posicion de la segunda rueda
+     */
+    public void swap(int first, int second) {
+        if (!active()) return;
+        if (first < 1 || first > wheels.size() ||
+            second < 1 || second > wheels.size()) {
+            error("La posicion de una rueda no es valida");
+            return;
+        }
+        Wheel one = wheels.get(first - 1);
+        Wheel two = wheels.get(second - 1);
+        if (one.isLocked() || two.isLocked()) {
+            error("No se puede intercambiar una rueda bloqueada");
+            return;
+        }
+        wheels.set(first - 1, two);
+        wheels.set(second - 1, one);
+        lastOperation = true;
+        updateView();
+    }
+
+    /**
+     * bloquea la rueda indicada
+     *
+     * @param wheel posicion de la rueda
+     */
+    public void lock(int wheel) {
+        if (!active()) return;
+        if (wheel < 1 || wheel > wheels.size()) {
+            error("La rueda no existe");
+            return;
+        }
+        wheels.get(wheel - 1).lock();
+        lastOperation = true;
+        updateView();
+    }
+
+    /**
+     * desbloquea la rueda indicada
+     *
+     * @param wheel posicion de la rueda
+     */
+    public void unlock(int wheel) {
+        if (!active()) return;
+        if (wheel < 1 || wheel > wheels.size()) {
+            error("La rueda no existe");
+            return;
+        }
+        wheels.get(wheel - 1).unlock();
+        lastOperation = true;
+        updateView();
+    }
+
+    /**
+     * gira una rueda el numero indicado de pasos
+     * si esta visible muestra cada paso
+     *
+     * @param wheel posicion de la rueda
+     * @param steps cantidad de pasos no negativa
+     */
+    public void spin(int wheel, int steps) {
+        if (!active()) return;
+        if (wheel < 1 || wheel > wheels.size() || steps < 0) {
+            error("Rueda o cantidad de pasos no valida");
+            return;
+        }
+        Wheel selected = wheels.get(wheel - 1);
+        if (selected.isLocked() || selected.size() == 0) {
+            error("La rueda esta bloqueada o sin simbolos");
+            return;
+        }
+        for (int i = 0; i < steps; i++) {
+            selected.spin();
+            updateView();
+            pauseView();
+        }
+        lastOperation = true;
+    }
+
+    /**
+     * coloca los simbolos indicados en todas las ruedas
+     * no cambia nada si algun simbolo no existe
+     *
+     * @param configuration colores deseados por rueda
+     */
+    public void setConfiguration(String[] configuration) {
+        if (!active()) return;
+        if (configuration == null || configuration.length != wheels.size()) {
+            error("La configuracion no coincide con las ruedas");
+            return;
+        }
+        for (int i = 0; i < configuration.length; i++) {
+            Wheel wheel = wheels.get(i);
+            if (wheel.isLocked() && !equalsColor(wheel.selectedSymbol(), configuration[i])) {
+                error("No se puede cambiar una rueda bloqueada");
+                return;
+            }
+            if (!wheel.hasSymbol(configuration[i])) {
+                error("La configuracion contiene un simbolo inexistente");
+                return;
+            }
+        }
+        for (int i = 0; i < configuration.length; i++) {
+            wheels.get(i).placeSymbol(configuration[i]);
+        }
+        lastOperation = true;
+        updateView();
+    }
+
+    /**
+     * compara dos colores, incluso cuando alguno es null
+     */
+    private boolean equalsColor(String first, String second) {
+        if (first == null) return second == null;
+        return first.equals(second);
+    }
+
+    /**
+     * permite observar el giro paso a paso en modo visible
+     */
+    private void pauseView() {
+        if (!visible) return;
+        try {
+            Thread.sleep(250);
+        } catch (InterruptedException exception) {
+            Thread.currentThread().interrupt();
+        }
     }
 
     /**

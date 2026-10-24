@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Wheel {
     private ArrayList<String> symbols;
     private int position;
+    private boolean locked;
 
     /**
      * crea una rueda con una copia de los colores de la maquina
@@ -18,6 +19,7 @@ public class Wheel {
     public Wheel(ArrayList<String> colors) {
         symbols = new ArrayList<String>(colors);
         position = 0;
+        locked = false;
     }
 
     /**
@@ -68,6 +70,39 @@ public class Wheel {
         if (index == -1) return false;
         position = index;
         return true;
+    }
+
+    /**
+     * bloquea la rueda
+     */
+    public void lock() {
+        locked = true;
+    }
+
+    /**
+     * desbloquea la rueda
+     */
+    public void unlock() {
+        locked = false;
+    }
+
+    /**
+     * informa si la rueda esta bloqueada
+     *
+     * @return true si esta bloqueada
+     */
+    public boolean isLocked() {
+        return locked;
+    }
+
+    /**
+     * comprueba si un simbolo pertenece a la rueda
+     *
+     * @param color nombre del simbolo
+     * @return true si el simbolo existe
+     */
+    public boolean hasSymbol(String color) {
+        return symbols.contains(color);
     }
 
     /**

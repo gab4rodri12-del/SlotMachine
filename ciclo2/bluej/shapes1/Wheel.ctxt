@@ -1,10 +1,16 @@
 #BlueJ class context
-#Tue Oct 20 21:21:36 COT 2026
+#Sat Oct 24 01:07:00 COT 2026
 comment0.target=Wheel
 comment0.text=\r\n representa una rueda y controla el simbolo seleccionado\r\n\r\n @author gaby-mathias\r\n @version 2026-2\r\n
 comment1.params=colors
 comment1.target=Wheel(java.util.ArrayList)
 comment1.text=\r\n crea una rueda con una copia de los colores de la maquina\r\n\r\n @param colors colores iniciales de la rueda\r\n
+comment10.target=java.lang.String selectedSymbol()
+comment10.text=\r\n consulta el color seleccionado\r\n\r\n @return color seleccionado o null si la rueda esta vacia\r\n
+comment11.target=int size()
+comment11.text=\r\n consulta cuantos simbolos contiene la rueda\r\n\r\n @return cantidad de simbolos\r\n
+comment12.target=java.lang.String[] symbols()
+comment12.text=\r\n consulta los simbolos de la rueda\r\n\r\n @return colores en el orden de la rueda\r\n
 comment2.params=pos color
 comment2.target=void addSymbol(int, java.lang.String)
 comment2.text=\r\n agrega un simbolo a la rueda y conserva la seleccion\r\n\r\n @param pos posicion en la que se agrega\r\n @param color color del simbolo\r\n
@@ -16,10 +22,13 @@ comment4.text=\r\n avanza al siguiente simbolo y vuelve al primero al terminar\r
 comment5.params=color
 comment5.target=boolean placeSymbol(java.lang.String)
 comment5.text=\r\n selecciona un simbolo por su color\r\n\r\n @param color color que se desea seleccionar\r\n @return true si el simbolo existe\r\n
-comment6.target=java.lang.String selectedSymbol()
-comment6.text=\r\n consulta el color seleccionado\r\n\r\n @return color seleccionado o null si la rueda esta vacia\r\n
-comment7.target=int size()
-comment7.text=\r\n consulta cuantos simbolos contiene la rueda\r\n\r\n @return cantidad de simbolos\r\n
-comment8.target=java.lang.String[] symbols()
-comment8.text=\r\n consulta los simbolos de la rueda\r\n\r\n @return colores en el orden de la rueda\r\n
-numComments=9
+comment6.target=void lock()
+comment6.text=\r\n bloquea la rueda\r\n
+comment7.target=void unlock()
+comment7.text=\r\n desbloquea la rueda\r\n
+comment8.target=boolean isLocked()
+comment8.text=\r\n informa si la rueda esta bloqueada\r\n\r\n @return true si esta bloqueada\r\n
+comment9.params=color
+comment9.target=boolean hasSymbol(java.lang.String)
+comment9.text=\r\n comprueba si un simbolo pertenece a la rueda\r\n\r\n @param color nombre del simbolo\r\n @return true si el simbolo existe\r\n
+numComments=13
